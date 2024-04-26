@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <title>instagram feed bootstrap</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid me-5 ms-4">
-            <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- nav superior -->
+        <div class="container-fluid  me-5 ms-4">
+            <a class="navbar-brand d-flex" href="#">
                 <img src="https://w7.pngwing.com/pngs/389/430/png-transparent-instagram-social-media-instagram-black-social-social-media-logo-icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
-                Instagram
+                <h4>Instagram</h4>
             </a>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item me-4">
-                <button type="button" class="btn btn-success">Create a new post</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button> 
               </li>
               <li class="nav-item dropdown">
                 <div class="dropdown">
@@ -33,18 +32,35 @@
                             <li><a class="dropdown-item colorRed" href="#">Log out</a></li> 
                          </ul>
                 </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--Modal de create new post-->
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Caption:</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Add the caption of your post here" rows="2">
+                        </div>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="fa-solid fa-camera"></i></button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="fa-solid fa-location-dot"></i></button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    <div class="container">
-        <div class="row">
-          <div class="col-12 justify-content-center">
-            <button type="button" class="btn btn-primary"><i class="fa-solid fa-square"></i></button>
-          </div>
-        </div>
-    </div>
+    </nav>
+    
+    
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
