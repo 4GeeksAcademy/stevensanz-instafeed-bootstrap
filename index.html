@@ -41,8 +41,10 @@
                       </div>
                       <div class="modal-body">
                         <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Caption:</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Add the caption of your post here" rows="2">
+                          <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" rows="2"></textarea>
+                            <label for="floatingTextarea2">Add the caption of your post here</label>
+                          </div>
                         </div>
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="fa-solid fa-camera"></i></button>
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="fa-solid fa-location-dot"></i></button>
@@ -59,7 +61,109 @@
           </div>
         </div>
     </nav>
-    
+    <ul class="nav nav-pills mb-3 mt-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><!--entorno 3 fotos por fila -->
+        <div class="container">
+          <div class="row"><!-- primeras 3 fotos-->
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2024/01/17/12/06/car-8514314_640.png" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2016/11/22/20/10/dog-1850465_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+          </div>
+          <div class="row"><!-- segundas 3 fotos-->
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+          </div>
+          <div class="row"><!-- terceras 3 fotos-->
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2017/04/25/05/44/basketball-2258650_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+            <div class="col-4">
+              <img src="https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_640.jpg" class="img-thumbnail" alt="error">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><!-- entorno feed -->
+        <div class="container">
+          <div class="row justify-content-center mb-3"> <!-- primer post-->
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header d-flex bg-white border-bottom-0">
+                  <h4>Beautiful places</h4> 
+                  <div class="ms-5">
+                    <p>04/10</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <img src="https://cdn.pixabay.com/photo/2022/08/19/01/06/ferris-wheel-7395944_640.jpg" class="img-fluid" alt="error">
+                </div>
+                <div class="card-footer bg-white d-flex flex-column border-top-0">
+                  <p><strong>500 Likes</strong></p>
+                  <p>This is an example of a very good photo you can post on Instagram</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3"><!-- Segundo post-->
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header bg-white border-bottom-0">
+                  <h4>More Beautiful places </h4>
+                </div>
+                <div class="card-body">
+                  <img src="https://cdn.pixabay.com/photo/2023/01/01/21/33/mountain-7690893_640.jpg" class="img-fluid" alt="error">
+                </div>
+                <div class="card-footer bg-white border-top-0">
+                  <p><strong>78642 Likes</strong></p>
+                  <p>This is an example of a very good photo you can post on Instagram</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3"><!--Tercer post -->
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header bg-white border-bottom-0">
+                  <h4>More Beautiful places </h4>
+                </div>
+                <div class="card-body">
+                  <img src="https://cdn.pixabay.com/photo/2014/08/15/11/29/beach-418742_640.jpg" class="img-fluid" alt="error">
+                </div>
+                <div class="card-footer bg-white border-top-0">
+                  <p><strong>78642 Likes</strong></p>
+                  <p>This is an example of a very good photo you can post on Instagram</p>
+                </div>
+              </div> 
+            </div>
+
+
+          </div>
+      </div>
+    </div>
     
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
